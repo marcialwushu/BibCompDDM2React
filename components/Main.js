@@ -1,7 +1,11 @@
 import React from 'react'
-import { StyleSheet, Platform, Image, Text, View } from 'react-native'
+import { StyleSheet, Platform, Image, Text, View, Button } from 'react-native'
 import firebase from 'firebase';
 import config from './db';
+
+import Header from './Header';
+import Bar from './Bar';
+import PhotoGrid from './PhotoGrid';
 
 export default class Main extends React.Component {
   state = { currentUser: null }
@@ -22,9 +26,17 @@ export default class Main extends React.Component {
 
     return (
       <View style={styles.container}>
+        <Header />
         <Text>
           Hi {currentUser && currentUser.email}!
         </Text>
+
+        <Button
+          title = 'Back'
+          onPress={ () =>   this.props.navigation.navigate('Login') }
+        />
+        <Bar />
+        <PhotoGrid />
       </View>
     )
   }
@@ -32,7 +44,7 @@ export default class Main extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   }
