@@ -10,13 +10,13 @@ O aplicativo deve ter as seguintes funcionalidades representadas pelas telas a s
 
 - Login/Logout 
 
-![](https://res.cloudinary.com/marcialwushu/image/upload/v1541218078/FGF/11.jpg)
+![](https://res.cloudinary.com/marcialwushu/image/upload/c_scale,h_137/v1541218078/FGF/03.jpg)
 
 - Cadastro de usuario 
 
-![](https://res.cloudinary.com/marcialwushu/image/upload/v1541218078/FGF/02.jpg)
+![](https://res.cloudinary.com/marcialwushu/image/upload/c_scale,h_137/v1541218078/FGF/02.jpg)
 
 - Edição do perfil de um usuário cadastrando livros
 
-![](https://res.cloudinary.com/marcialwushu/image/upload/v1541218078/FGF/03.jpg)
+![](https://res.cloudinary.com/marcialwushu/image/upload/c_scale,h_137/v1541218078/FGF/03.jpg)
 
