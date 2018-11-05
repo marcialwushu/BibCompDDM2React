@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Constants } from 'expo';
 
 import {
-	AppRegistry,
 	StyleSheet,
 	Text,
 	View,
@@ -30,24 +29,24 @@ export default class ProfilePage extends React.Component {
 
 const styles = StyleSheet.create({
   headerBackground: {
-	// flex: 1,
+	
 	width: 400,
   height: 200,
 	alignSelf: 'strech',
-  // marginBotton: 700
+  
   },
   header: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: 'rgba(0,0,0, 0.5)'
+    backgroundColor: '#455a64'
   },
   profilepicWrap: {
     width: 180,
     height: 180,
     borderRadius: 100,
-    borderColor: 'rgba(0,0,0, 0.4)',
+    borderColor: '#455a64',
     borderWidth: 16,
   },
   profilepic: {

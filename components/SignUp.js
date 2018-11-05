@@ -34,7 +34,7 @@ export default class SignUp extends React.Component {
           style={styles.inputBox} 
           underlineColorAndroid='rgba(0,0,0,0)'
           placeholderTextColor='#ffffff'
-          placeholder="Email"
+          placeholder="E-mail"
           autoCapitalize="none"
           onChangeText={email => this.setState({ email })}
           value={this.state.email}
@@ -44,23 +44,18 @@ export default class SignUp extends React.Component {
           underlineColorAndroid='rgba(0,0,0,0)'
           placeholderTextColor='#ffffff'
           secureTextEntry
-          placeholder="Password"
+          placeholder="Senha"
           autoCapitalize="none"
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
 
         <TouchableOpacity style={styles.button} onPress={this.handleSignUp} >
-           <Text style={styles.buttonText}> Sign Up </Text>
+           <Text style={styles.buttonText}> Criar conta </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Login')} >
-           <Text style={styles.buttonText}> Already have an account? Login </Text>
-        </TouchableOpacity>
-
-        <Button title="Sign Up" onPress={this.handleSignUp} />
         <Button
-          title="Already have an account? Login"
+          title="Já possui uma conta? Login"
           onPress={() => this.props.navigation.navigate('Login')}
         />
       </View>

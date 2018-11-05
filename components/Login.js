@@ -35,7 +35,7 @@ export default class Login extends React.Component {
           underlineColorAndroid='rgba(0,0,0,0)'
           placeholderTextColor='#ffffff'
           autoCapitalize="none"
-          placeholder="Email"
+          placeholder="E-mail"
           onChangeText={email => this.setState({ email })}
           value={this.state.email}
         />
@@ -45,23 +45,17 @@ export default class Login extends React.Component {
           underlineColorAndroid='rgba(0,0,0,0)'
           placeholderTextColor='#ffffff'
           autoCapitalize="none"
-          placeholder="Password"
+          placeholder="Senha"
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <TouchableOpacity style={styles.button} onPress={this.handleLogin} >
-           <Text style={styles.buttonText}> Login </Text>
+          <TouchableOpacity style={styles.button} onPress={this.handleLogin} >
+           <Text style={styles.buttonText}> Entrar </Text>
         </TouchableOpacity>
-
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('SignUp')} >
-           <Text style={styles.buttonText}> Don't have an account? Sign Up </Text>
-        </TouchableOpacity>
-
-        // <Button style={styles.button} title="Login" onPress={this.handleLogin} />
         
         <Button
           style={styles.buttonText}
-          title="Don't have an account? Sign Up"
+          title="Não possui uma conta? Cadastre-se"
           onPress={() => this.props.navigation.navigate('SignUp')}
         />
       </View>
